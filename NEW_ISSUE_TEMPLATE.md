@@ -24,23 +24,8 @@ Chromium
 
 ### Steps to Reproduce
 
-1. Create a TypeScript ESM project with `"type": "module"` in package.json
-2. Install `@playwright/test@1.58.0` and `tsx@4.21.0`
-3. Import `tsx/esm` in `playwright.config.ts`:
-   ```typescript
-   import { defineConfig } from "@playwright/test";
-   import "tsx/esm";
-
-   export default defineConfig({
-     testDir: "./tests",
-     build: { external: ["*"] },
-   });
-   ```
-4. Create any test file (e.g., `tests/example.spec.ts`)
-5. Run `npx playwright test`
-
 **Minimal Reproduction Repository:**
-[Upload the /tmp/playwright-esm-preflight-bug folder to GitHub and add link here]
+https://github.com/Abhinegi2/playwright-issue
 
 Or run these commands to reproduce locally:
 ```bash
